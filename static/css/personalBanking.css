@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+h3{
+  display: inline-block;
+  background-color: #7382aa;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #2980b9;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+  
+
+
+}
+
+h1 {
+  font-size: 3em;
+}
+.button {
+  display: inline-block;
+  background-color: #0b0c0c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #dadddd;
+}
+
+
+
+
+footer {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.personalBankingForm-button{
+  background-color: #1e1e30;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+
+}
+
+
+.my-paragraph {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,63 @@
+
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+{% block cssLinks %}
+{%load static%}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock cssLinks %}
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+  
+  <img src="static/images/istockphoto-1416335096-170667a.jpg" class="image1 w-100">
+  
+<h1 class="Prantha" >Contact Us</h1>
+</div>
+<div class="container mb-3 py-4">
+  <form method="post" action="contact">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-25">
+        <label for="name">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Your last name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Enter Your email address here...">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="description">Tell me about what you want to contact us for...</label>
+      </div>
+      <div class="col-75">
+        <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+
+</div>
+
+{% endblock body %}

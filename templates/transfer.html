@@ -1,0 +1,143 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>Deposit</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+
+
+
+
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+  <style>
+    /* img{
+      max-width: 30%;
+
+    } */
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .small-it {
+      max-width: 80%;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    form {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  </style>
+
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <form method="post">
+    {% csrf_token %}
+    <label for="from_account_id">From Account ID:</label>
+    <input type="text" name="from_account_id" id="from_account_id">
+    <br>
+    <label for="to_account_id">To Account ID:</label>
+    <input type="text" name="to_account_id" id="to_account_id">
+    <br>
+    <label for="amount">Amount:</label>
+    <input type="text" name="amount" id="amount">
+    <br>
+    <button type="submit">Transfer</button>
+</form>
+
+</main>
+
+
+<!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+</body>
+
+</html>

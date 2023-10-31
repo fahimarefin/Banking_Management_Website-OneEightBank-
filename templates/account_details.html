@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Details</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/account_details.css' %}">
+</head>
+<body>
+  <h2>{{ account.name }}</h2>
+  <h3>Balance: ${{ account.balance }}</h3>
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+  <form method="post" action="{% url 'deposit' account.id %}">
+    {% csrf_token %}
+    <h4>Deposit</h4>
+    <label for="deposit_amount">Amount:</label>
+    <input type="number" name="deposit_amount" step="0.01" required>
+    <input type="submit" name="deposit" value="Deposit">
+  </form>
+  <form method="post" action="{% url 'withdraw' account.id %}">
+    {% csrf_token %}
+    <h4>Withdraw</h4>
+    <label for="withdraw_amount">Amount:</label>
+    <input type="number" name="withdraw_amount" step="0.01" required>
+    <input type="submit" name="withdraw" value="Withdraw">
+  </form>
+  <form method="get" action="{% url 'balance' account.id %}">
+    <input type="submit" name="check_balance" value="Check Balance">
+  </form>
+</body>
+</html>

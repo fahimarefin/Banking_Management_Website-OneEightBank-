@@ -1,0 +1,50 @@
+
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+{% block cssLinks %}
+{%load static%}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}">
+{% endblock cssLinks %}
+{% block body %}
+
+<header>
+    {% csrf_token %}
+    <h1>Sumaya's Portfolio</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <section id="about">
+      <h2>About Sumaya</h2>
+      <p>Hi, I'm Sumaya Akter. I'm a student of EAST WEST UNIVERSITY.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Contact Me</h2>
+      <ul>
+        <li><a href="#">Phone number:</a></li>
+        <li><a href="#">email:</a></li>
+      </ul>
+    </section>
+    
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+</body>
+{% endblock body %}

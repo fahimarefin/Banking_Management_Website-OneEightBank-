@@ -1,0 +1,203 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>Profile</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+
+  <style>
+    /* img{
+      max-width: 30%;
+
+    } */
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .small-it {
+      max-width: 80%;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/personalBanking.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="/home/">One-Eight Bank</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index_after_signin">Home Page</a>
+            </li>
+          </ul>
+
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    {% csrf_token %}
+    <section>
+      <h1>Welcome to One-Eight Bank</h1>
+      <p>Here, you can manage your accounts, make payments, and transfer funds.</p>
+     
+
+      <p ><a class="button" href="/personalBankingForm"> Apply For Personal Banking</a></p>
+    </section>
+   
+    <h5 class="well well-sm"><i>One-Eight Bank offers a thoughtful 
+      bouquet of exclusive services, benefits and banking solutions to the Bank's 
+      customers.Customers will enjoy the privileged services through 
+      dedicated Relationship Manager. A bunch of specially priced services and products 
+      will also be available for the customers. All sorts of privileged facilities are designed 
+      only for  customers to make our relationship more congenial.</i></h3>
+      <br>
+      <h3>Personal Banking Features:</h3>
+      <br>
+      <h5 class="personalBankingForm-button">Checking and savings accounts:</h5>
+    
+    <p class="my-paragraph">These are the most basic types of accounts that allow user to deposit and withdraw funds. 
+      A checking account is typically used for 
+      everyday expenses and a savings account is used to save money and earn interest.</p>
+
+      <h5 class="personalBankingForm-button">Online and mobile banking:</h5>
+
+    <p class="my-paragraph"> This feature allows our user to access their account information and perform transactions
+       using your computer or mobile device.
+       they can view their account balances, transfer money between accounts, pay bills, and more.</p>
+
+       <h5  class="personalBankingForm-button">Personal loans:</h5>
+      
+      <p class="my-paragraph"> Banks offer personal loans for a variety of purposes,
+         including home renovations, debt consolidation, and major purchases.
+      </p>
+      <h5 class="personalBankingForm-button">Investment accounts:</h5>
+
+      <p class="my-paragraph" >Banks may offer investment 
+        accounts that allow you to invest in stocks, bonds, and other securities.</p>
+
+      <h5 class="personalBankingForm-button">Retirement accounts:</h5>
+
+        <p class="my-paragraph"> Banks may offer retirement accounts such as
+           IRAs and 401(k)s that allow our members to save for retirement and receive tax benefits.</p>
+          <h5 class="personalBankingForm-button" >Overdraft protection:</h5>
+          <p class="my-paragraph">This feature allows our customer to avoid overdraft fees by linking your checking account to a 
+            savings account or credit card that will cover any overdrafts.</p>
+        <h5 class="personalBankingForm-button">Alerts and notifications:</h5>
+            
+            <p class="my-paragraph">Banks may offer alerts and notifications to help you stay on top of your finances, 
+              including reminders for upcoming bills, 
+              low account balances, and suspicious activity on your account.</p>
+        <h5 class="personalBankingForm-button">Rewards programs:</h5>
+
+        <p class="my-paragraph">Our Bank offer rewards programs that allow our customer to earn points 
+                or cash back for using certain products or services.</p>
+            
+        <h5 class="personalBankingForm-button">Customer service:</h5>
+
+                <p class="my-paragraph"> Our bank offer customer service support through phone,
+                   email, or in-person at branches to help our customer with any questions or issues they may have</p>
+    
+    
+    <footer>
+      <p>&copy; 2023 One-Eight Bank</p>
+    </footer>
+    
+
+  </main>
+
+
+  <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+</body>
+
+</html>
+    
+  

@@ -1,0 +1,64 @@
+
+{% extends 'base.html' %}
+{% block title %}
+Devloper Team
+{% endblock title %}
+{% block cssLinks %}
+{%load static%}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/devs.css' %}">
+{% endblock cssLinks %}
+{% block body %}
+
+<main>
+
+
+
+
+  <div class="container marketing">
+
+    <
+    <div class="row">
+
+      <div class="col-lg-4">
+        <img src="{% static 'images/274110696_4940473556070698_6321959112205570323_n.jpg' %}" class="rounded-circle shadow-4-strong small-it"
+          style="width: 250px; height: 250px; object-fit: cover;">
+
+        <h2 class="fw-normal">Fahim Arefin <br>(2020-1-60-052)</h2>
+       
+        <p><a class="btn btn-secondary" href="/portfolioFahim"> Portfolio &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+
+      <div class="col-lg-4">
+        <img src="{% static 'images/116194299_657843368274768_3908684717143320031_n.jpg' %}" class="rounded-circle shadow-4-strong small-it"
+          style="width: 250px; height: 250px; object-fit: cover;">
+
+        <h2 class="fw-normal">Sadia Rahman Ani <br>(2020-2-60-172)</h2>
+        
+        <p><a class="btn btn-secondary" href="/portfolioAni"> Portfolio &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+
+      <div class="col-lg-4">
+        <img src="{% static 'image/liza.jpg' %}" class="rounded-circle shadow-4-strong small-it"
+          style="width: 250px; height: 250px; object-fit: cover;">
+
+        <h2 class="fw-normal">Sumaya Akter<br> (0000-0-00-000)</h2>
+        
+        <p><a class="btn btn-secondary" href="/portfolioSumya"> Portfolio &raquo;</a></p>
+      </div>
+
+
+  
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+</main>
+
+
+{% endblock body %}
